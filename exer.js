@@ -12,14 +12,12 @@ const image = [
 //Call the onClick button named RUN
 function run() {
 
-   var random_index = Math.floor(Math.random()*image.length);
+    //get a random index
+    random_index = Math.floor(Math.random()*image.length);
 
-
-  // //get an image at random index
-  //  selected_image = image[random_index];
-
-
-   document.getElementById('display_image').innerHTML = "test";
-
+   //get an image at the random index 
+   selected_image = image[random_index];
+   
+ 
 
 }
