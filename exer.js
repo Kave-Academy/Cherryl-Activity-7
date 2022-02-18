@@ -6,7 +6,12 @@ const image = [
   '4.png',
   '5.jpg',
   '6.png',
-  '7.jpg'
+  '7.jpg',
+  '8.jpg',
+  '9.jpg',
+  '10.jpg',
+  '11.jpg',
+  '12.jpg'
 ];
 
 //Call the onClick button named RUN
@@ -18,6 +23,8 @@ function run() {
    //get an image at the random index 
    selected_image = image[random_index];
    
- 
+    //display the image
+    document.getElementById('display_image').src = `./assets/${selected_image}`;
+
 
 }
