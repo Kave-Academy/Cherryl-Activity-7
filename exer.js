@@ -1,5 +1,5 @@
 // get all the images at assests folder
-var image = [
+const image = [
   '1.jpg',
   '2.jpg',
   '3.png',
@@ -12,15 +12,14 @@ var image = [
 //Call the onClick button named RUN
 function run() {
 
-  //random index
-  random_index = Math.floor(Math.random() * image);
+   var random_index = Math.floor(Math.random()*image.length);
 
 
-  //get an image at random index
-   selected_image = image[random_index];
+  // //get an image at random index
+  //  selected_image = image[random_index];
 
 
-   document.getElementById('display_image').src = `./assets/${selected_image }`;
+   document.getElementById('display_image').innerHTML = "test";
 
 
 }
